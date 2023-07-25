@@ -14,7 +14,7 @@ from itertools import combinations
 # на любое большее количество друзей.
 
 def complete_list() -> dict:
-    selector = input('1. Заполнить вручную\n2. Заполнить автоматически:\n')
+    selector = input('1. Заполнить вручную\n2. Заполнить автоматически\n>>> ')
     match selector:
         case '1':
             return interactive_complete_list()
