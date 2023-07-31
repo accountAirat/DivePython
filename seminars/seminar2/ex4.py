@@ -10,7 +10,7 @@ from decimal import getcontext, Decimal
 '''
 
 
-getcontext().prec = 43
+getcontext().prec = 2
 
 d = float(input('Введите диаметр: '))
 

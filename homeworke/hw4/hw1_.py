@@ -10,9 +10,9 @@ def matrix_filling(m: list, width: int = 3, *, height: int = None) -> None:
 
 
 def matrix_transposition(m: list) -> None:
-    temp = [list(i) for i in zip(*m)]
+    temp = list(zip(*m))
     m.clear()
-    m += temp
+    m += temp  # В моём решении возвращается лист, здесь кортеж
 
 
 matrix = []
