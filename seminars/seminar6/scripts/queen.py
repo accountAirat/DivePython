@@ -14,7 +14,6 @@ from itertools import combinations
 Проверяйте различный случайные варианты и выведите 4 успешных расстановки.
 """
 
-
 # После прохождения классов, всё это нужно перенести в параметры класса.
 # Прописать для SIZE_BOARD и AMOUNT_QUEENS get и set методы.
 SIZE_BOARD = 8
@@ -23,22 +22,41 @@ ALL_POSITIONS = list(combinations([i for i in range(SIZE_BOARD)] + [i for i in r
 
 
 def find_liberty_queens() -> list:
-    win_combination = sample(ALL_POSITIONS, AMOUNT_QUEENS)
-    while not check_queens(*win_combination):
-        win_combination = sample(ALL_POSITIONS, AMOUNT_QUEENS)
-    return win_combination
+    combination = sample(ALL_POSITIONS, AMOUNT_QUEENS)
+    while not check_queens(*combination):
+        combination = sample(ALL_POSITIONS, AMOUNT_QUEENS)
+    return combination
+
+
+def new_find_liberty_queens() -> list:
+    for combination in combinations(ALL_POSITIONS, AMOUNT_QUEENS):
+        if new_check_queens(*combination):
+            return combination
 
 
 def check_queens(*args: tuple) -> bool:
     for i in range(len(args) - 1):
         for j in range(i + 1, len(args)):
-            if args[i][0] - args[i][1] == args[j][0] - args[j][1]:
+            if abs(args[i][0] - args[i][1]) == abs(args[j][0] - args[j][1]):
                 return False
-            elif args[i][0] + args[i][1] == args[j][0] + args[j][1]:
+            elif abs(args[i][0] + args[i][1]) == abs(args[j][0] + args[j][1]):
                 return False
             elif args[i][0] == args[j][0]:
                 return False
             elif args[i][1] == args[j][1]:
+                return False
+    return True
+
+
+def new_check_queens(*args: tuple) -> bool:
+    for i in range(len(args) - 1):
+        for j in range(i + 1, len(args)):
+            if (
+                    args[i][0] == args[j][0]
+                    or args[i][1] == args[j][1]
+                    or abs(args[i][0] - args[i][1]) == abs(args[j][0] - args[j][1])
+                    or abs(args[i][0] + args[i][1]) == abs(args[j][0] + args[j][1])
+            ):
                 return False
     return True
 
@@ -63,6 +81,6 @@ if __name__ == '__main__':
     print()
     # Выводит 4 успешных расстановки, но ооочень долго :(
     for i in range(4):
-        print_board(*find_liberty_queens())
+        print_board(*new_find_liberty_queens())
         print()
     # За то красиво получилось распечатать :)

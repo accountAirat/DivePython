@@ -1,4 +1,5 @@
 from sys import argv
+
 """
 Создайте модуль и напишите в нём функцию, которая получает на вход дату в формате DD.MM.YYYY
 Функция возвращает истину, если дата может существовать или ложь, если такая дата невозможна.
@@ -26,10 +27,7 @@ def check_date(inp_year: str):
 
 
 def _check_year(year):
-    if year % 4 != 0 or year % 100 == 0 and year % 400 != 0:
-        return True
-    else:
-        return False
+    return bool(not year % 4 and year % 100 or not year % 400)
 
 
 if __name__ == '__main__':
