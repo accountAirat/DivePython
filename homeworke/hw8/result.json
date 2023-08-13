@@ -1,0 +1,98 @@
+[
+  {
+    "name": "test",
+    "parent_dir": "hw7",
+    "type": "dir",
+    "size": 4096
+  },
+  {
+    "name": "file_manager",
+    "parent_dir": "hw7",
+    "type": "dir",
+    "size": 4096
+  },
+  {
+    "name": "main.py",
+    "parent_dir": "hw7",
+    "type": "file",
+    "size": 51
+  },
+  {
+    "name": "KVUtSJwzyouPMnaLRgB.txt",
+    "parent_dir": "test",
+    "type": "file",
+    "size": 3826
+  },
+  {
+    "name": "EYGuUTlHMLoJSOF.txt",
+    "parent_dir": "test",
+    "type": "file",
+    "size": 635
+  },
+  {
+    "name": "OCypGsZqYvQWERTY000003.mp4",
+    "parent_dir": "test",
+    "type": "file",
+    "size": 3892
+  },
+  {
+    "name": "bpWjHitZcVQWERTY000002.mp4",
+    "parent_dir": "test",
+    "type": "file",
+    "size": 2372
+  },
+  {
+    "name": "LPChuQWERTY000001.mp4",
+    "parent_dir": "test",
+    "type": "file",
+    "size": 2522
+  },
+  {
+    "name": "owhtKkvUIi.txt",
+    "parent_dir": "test",
+    "type": "file",
+    "size": 1459
+  },
+  {
+    "name": "ySxIQLVcdrwkYtKFHjEouXhlzA.txt",
+    "parent_dir": "test",
+    "type": "file",
+    "size": 1332
+  },
+  {
+    "name": "qajsGCyBOvTxUPtQFS.txt",
+    "parent_dir": "test",
+    "type": "file",
+    "size": 2779
+  },
+  {
+    "name": "qbJQjUCxvgafGHAkdLcZKeDuTt.torrent",
+    "parent_dir": "test",
+    "type": "file",
+    "size": 2223
+  },
+  {
+    "name": "vqwisV.torrent",
+    "parent_dir": "test",
+    "type": "file",
+    "size": 3299
+  },
+  {
+    "name": "generation.py",
+    "parent_dir": "file_manager",
+    "type": "file",
+    "size": 4512
+  },
+  {
+    "name": "transformation.py",
+    "parent_dir": "file_manager",
+    "type": "file",
+    "size": 4785
+  },
+  {
+    "name": "__init__.py",
+    "parent_dir": "file_manager",
+    "type": "file",
+    "size": 0
+  }
+]
