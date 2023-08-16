@@ -17,6 +17,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/homeworke/hw9/numbers.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/lesson/l8/csv_dir/biostats.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/lesson/l8/csv_dir/biostats_new.csv">
           <value>
             <Attribute>
@@ -32,6 +46,20 @@
           </value>
         </entry>
         <entry key="/seminars/seminar8/my_file.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/test/test_task/data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/test/test_task/result.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
