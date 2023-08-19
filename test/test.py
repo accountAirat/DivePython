@@ -1,17 +1,15 @@
-# from random import randint
-#
-# n = tuple(zip((randint(1, 8) for _ in range(8)), (randint(1, 8) for _ in range(8))))
-#
-# for i in n:
-#     print(i[0], i[1])
+from curses import wrapper
 
-from itertools import combinations, permutations
+def main(stdscr):
+    # Очистить экран
+    stdscr.clear()
 
-# print(f'♕{chr(8197)}♕')
-# print(f'♕{chr(8239)}♕')
-# print(f'♕ ♕')
+    # вызывает ZeroDivisionError когда i == 10.
+    for i in range(0, 11):
+        v = i-10
+        stdscr.addstr(i, 0, '10 divided by {} is {}'.format(v, 10/v))
 
-ALL_combinations = list(combinations([i for i in range(8)], 2))
-ALL_permutations = list(permutations([i for i in range(8)], 2))
-print(ALL_combinations)
-print(ALL_permutations)
+    stdscr.refresh()
+    # stdscr.getkey()
+
+wrapper(main)
