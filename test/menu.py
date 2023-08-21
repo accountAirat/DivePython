@@ -93,3 +93,4 @@ class MyApp(object):
 
 if __name__ == '__main__':
     curses.wrapper(MyApp)
+
