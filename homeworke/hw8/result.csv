@@ -1,0 +1,17 @@
+"name","parent_dir","type","size"
+"test","hw7","dir",4096
+"file_manager","hw7","dir",4096
+"main.py","hw7","file",51
+"KVUtSJwzyouPMnaLRgB.txt","test","file",3826
+"EYGuUTlHMLoJSOF.txt","test","file",635
+"OCypGsZqYvQWERTY000003.mp4","test","file",3892
+"bpWjHitZcVQWERTY000002.mp4","test","file",2372
+"LPChuQWERTY000001.mp4","test","file",2522
+"owhtKkvUIi.txt","test","file",1459
+"ySxIQLVcdrwkYtKFHjEouXhlzA.txt","test","file",1332
+"qajsGCyBOvTxUPtQFS.txt","test","file",2779
+"qbJQjUCxvgafGHAkdLcZKeDuTt.torrent","test","file",2223
+"vqwisV.torrent","test","file",3299
+"generation.py","file_manager","file",4512
+"transformation.py","file_manager","file",4785
+"__init__.py","file_manager","file",0

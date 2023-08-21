@@ -12,7 +12,7 @@ with (
     csv_write = csv.DictWriter(f_write, fieldnames=["id", "name", "office", "sex", "age", "height", "weight"],
                                dialect='excel-tab',
                                quoting=csv.QUOTE_ALL)
-    csv_write.writeheader()
+
     all_data = []
     for i, dict_row in enumerate(csv_read):
         if i != 0:
