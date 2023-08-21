@@ -27,7 +27,7 @@ class Person:
         return True
 
     def get_full_name(self):
-        return f'{self.firstname} {self.lastname} {"" if (self.sex is None) else self.sex}'
+        return f'{self.firstname} {self.lastname} {"" if self.sex else self.sex}'
 
 
 class Employee(Person):
